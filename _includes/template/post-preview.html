@@ -1,6 +1,6 @@
 <article class="col-6 col-12-xsmall work-item">
-    <a href="{{ post.url }}" class="image fit thumb">
-        <img src="{{ post.image }}" alt="{{ post.title }}" />
+    <a href="{{ post.url | relative_url }}" class="image fit thumb">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
     </a>
     <h3>{{ post.title }}</h3>
     <p> {{ 

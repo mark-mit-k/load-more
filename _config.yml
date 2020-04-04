@@ -42,9 +42,9 @@ defaults:
     values:
       sitemap: false
 
-markdown: CommonMarkGhPages
-
+markdown: kramdown # CommonMarkGhPages
 highlighter: rouge
+permalink: /:year-:month-:day-:title/
 
 # jekyll-mentions 
 jekyll-mentions:
