@@ -1,13 +1,13 @@
 - name: Twitter
   link: https://twitter.com/MarkWarneke
-  class: fa-twitter
+  class: brands fa-twitter
 - name: Github
   link: https://github.com/MarkWarneke
-  class: fa-github
+  class: brands fa-github
 - name: LinkedIn
   link: https://linkedin.com/in/MarkWarneke
-  class: fa-linkedin
+  class: brands fa-linkedin
 - name: Email
   link: mailto:warneke.mark@gmail.com
-  class: fa-envelope
+  class: solid fa-envelope
   

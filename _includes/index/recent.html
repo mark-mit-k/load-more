@@ -1,0 +1,12 @@
+<h2>Recent Work</h2>
+<div class="row">
+{% for post in site.posts limit:4 %}
+    {% if post.draft %}
+    {% else %}
+        {% include template/post-preview.html %}
+    {% endif %}
+{% endfor %}
+</div>
+<ul class="actions">
+    <li><a href="blog" class="button">Blog</a></li>
+</ul>

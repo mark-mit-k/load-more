@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: Imprint
 use-site-title: true
 ---
-
 
 ## Contact
 
