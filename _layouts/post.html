@@ -1,29 +1,33 @@
 ---
 layout: default
 ---
-<section>
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-    
-  {{ content }}
+<!-- Main -->
+<div id="main">
+    <!-- Post -->
+    <article class="post">
+        {% include future/template/page-header.html %}
+        <span class="image featured">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+        </span>
+        {{ content }}
 
-  {% include template/pager.html %}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- SquareAd -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1202813824807024"
+            data-ad-slot="3447176874"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        
+    </article>
 
-  <div class="disqus-comments">
-    {% include util/disqus.html %}
-  </div>
-</section>
+    <div class="disqus-comments">
+        {% include util/disqus.html %}
+    </div>  
+</div>
 
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- SquareAd -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-1202813824807024"
-    data-ad-slot="3447176874"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{% include future/sidebar-elements/footer.html %}

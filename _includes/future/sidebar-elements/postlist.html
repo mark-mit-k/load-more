@@ -1,0 +1,8 @@
+<!-- Posts List -->
+<section>
+    <ul class="posts">
+        {% for post in site.posts limit: 4 %}
+            {% include future/template/preview.html %}
+        {% endfor %}
+    </ul>
+</section>

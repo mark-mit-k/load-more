@@ -1,0 +1,12 @@
+<footer>
+    <ul class="actions">
+        <li><a href="{{ post.url | relative_url }}" class="button large">Continue Reading</a></li>
+    </ul>
+    <ul class="stats">
+        {%- for tag in post.tags -%}
+        <li><a href="#">{{ tag }}</a></li>
+        {%- endfor -%}
+        <!--<li><a href="#" class="icon solid fa-heart">28</a></li>
+        <li><a href="#" class="icon solid fa-comment">128</a></li>-->
+    </ul>
+</footer>

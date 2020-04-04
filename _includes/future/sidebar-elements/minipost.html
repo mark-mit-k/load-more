@@ -1,0 +1,8 @@
+<!-- Mini Posts -->
+<section>
+    <div class="mini-posts">
+        {% for post in site.posts limit: 4 %}     
+            {% include future/template/mini-post.html %}
+        {% endfor %}
+    </div>
+</section>

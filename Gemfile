@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-minifier' # https://github.com/digitalsparky/jekyll-minifier
   gem 'jekyll-mentions' # https://github.com/jekyll/jekyll-mentions
   gem 'jekyll-commonmark-ghpages' # https://github.com/github/jekyll-commonmark-ghpages
+  gem 'jekyll-paginate-v2' # https://github.com/sverrirs/jekyll-paginate-v2
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

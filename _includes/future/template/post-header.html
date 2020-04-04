@@ -1,0 +1,15 @@
+<header>
+    <div class="title">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.subtitle }}</p>
+    </div>
+    <div class="meta">
+        <time class="published" datetime="{{ post.date  | date: "%Y-%m-%d" }}">{{ post.date | date: '%B, %d %Y' }}</time>
+        <a href="https://twitter.com/{{site.data.authors.markwarneke.twitter}}" class="author" target="_blank">
+            <span class="name">
+                {{ site.data.authors.markwarneke.name }}
+            </span>
+            <img src="{{site.data.authors.markwarneke.picture}}" alt="{{ site.data.authors.markwarneke.name }}"/>
+        </a>
+    </div>
+</header>

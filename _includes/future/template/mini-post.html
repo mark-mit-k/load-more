@@ -1,0 +1,14 @@
+<article class="mini-post">
+    <header>
+        <h3>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <time class="published" datetime="{{ post.date  | date: "%Y-%m-%d" }}">
+            {{ post.date | date: '%B, %d %Y' }}
+        </time>
+        <a href="https://twitter.com/{{site.data.authors.markwarneke.twitter}}" class="author" target="_blank">
+    </header>
+    <a href="{{ post.url | relative_url }}" class="image">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+    </a>
+</article>

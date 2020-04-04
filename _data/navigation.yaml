@@ -2,7 +2,9 @@
   link: /
 - name: About
   link: /about/
-- name: Blog
-  link: /blog/
+- name: Code
+  link: /code/
+- name: Talks
+  link: /talks/
 - name: Imprint
   link: /imprint/

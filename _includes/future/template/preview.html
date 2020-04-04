@@ -1,0 +1,16 @@
+<li>
+    <article>
+        <header>
+            <h3>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <time class="published" datetime="{{ post.date  | date: "%Y-%m-%d" }}">
+                {{ post.date | date: '%B, %d %Y' }}
+            </time>
+        </header>
+        <a href="{{ post.url | relative_url }}" class="image">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+        </a>
+    </article>
+</li>
+

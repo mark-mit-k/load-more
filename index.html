@@ -1,14 +1,25 @@
 ---
-layout: default
+layout: site
+pagination: 
+  enabled: true
 ---
-<section id="one">
-    {% include index/introduction.html %}
-</section>
 
-<section id="two">
-    {% include index/recent.html %}
-</section>
+{% for post in paginator.posts %}
+	{% include future/template/post.html %}
+{% endfor %}
 
-<section id="three">
-    {% include index/contact.html %}
-</section>
+{% if paginator.total_pages > 1 %}
+<!-- Pagination -->
+<ul class="actions pagination">
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="disabled button large previous">Newer</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button large next">Older</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

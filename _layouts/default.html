@@ -5,18 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     {% seo %}
   </head>
   
 	<body class="is-preload">
-    {% include side/navigation.html %}
-    {% include side/header.html %}
-    <!-- Main -->
-    <div id="main">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      {% include future/header.html %}
+      {% include future/menu.html %}
       {{ content }}
     </div>
-    {% include side/footer.html %}
   </body>
   {% include util/scripts.html %}
 </html>

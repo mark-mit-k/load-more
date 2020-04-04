@@ -1,5 +1,15 @@
 ---
 ---
-@import "base";
+// @import "base";
+@import "main";
 @import './fontawesome-all.min.css';
 
+.image {
+  overflow: hidden;
+  max-height: 250px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}

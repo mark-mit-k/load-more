@@ -1,0 +1,13 @@
+<!-- Post -->
+<article class="post">
+    {% include future/template/post-header.html %}
+    <a href="{{ post.url | relative_url }}" class="image featured">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+    </a>
+    <p> {{ 
+        post.excerpt 
+        | strip_html
+        | xml_escape
+    }} </p>
+    {% include future/template/post-footer.html %}
+</article>

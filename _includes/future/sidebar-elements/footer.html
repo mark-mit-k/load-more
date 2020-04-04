@@ -1,0 +1,9 @@
+<!-- Footer -->
+<section id="footer">
+    <ul class="icons">
+        {% for item in site.data.social %}
+            {% include util/social.html %}
+        {% endfor %}
+    </ul>
+    {% include util/imprint.html %}
+</section>
