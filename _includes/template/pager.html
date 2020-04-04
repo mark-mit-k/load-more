@@ -1,0 +1,10 @@
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top"
+        title="{{ page.previous.title }}">&larr; Previous Post</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top"
+        title="{{ page.next.title }}">Next Post &rarr;</a>
+    </li>
+</ul>

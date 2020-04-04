@@ -5,9 +5,16 @@ layout: default
 <style>
   @media only screen and (min-width: 768px) {
     .card-columns {
-        column-count: 3;
-        column-gap: normal;
+        column-count: 2;
+        column-gap: 5rem;
     }
+  }
+  .outer-div{
+    overflow: hidden;
+    height: 200px;
+  }
+  .card-img-top {
+    height: 100%;
   }
   .card {
       margin-bottom: 25px;
@@ -22,10 +29,8 @@ layout: default
       {% else %} 
       <div class="card rounded">
         {% if post.image %}
-        <div class="outer-div card-img-top">
-          <a href="{{ post.url | relative_url }}">
-            <div class="inner-div" style="background-image: url({{ post.image | relative_url }})" ></div>
-          </a>
+        <div class="outer-div">
+          <img class="card-img-top" src="{{ post.image | relative_url }}" alt="Card image cap">
         </div>
         {% endif %}
         
@@ -50,10 +55,10 @@ layout: default
           <p class="card-text text-center">
             <small class="text-muted">
               <a href="{{ post.url | relative_url }}" class="post-read-more">
-                Read&nbsp;More
+                {{ "Read More" |  upcase }}
               </a>
               <span>  
-                &bull; {{ post.date | date: "%-d %B %Y" }}
+                &bull; {{ post.date | date: "%-d %B %Y" |  upcase }}
               </span>
               <span> &bull; {{ post.time }} MIN READ </span>
             </small>

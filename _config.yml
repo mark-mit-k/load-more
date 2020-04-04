@@ -31,6 +31,9 @@ github_username:  MarkWarneke
 author:
   twitter: MarkWarneke
 
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+disqus: "markwarneke"
+
 # jekyll-sitemap
 defaults:
   -
@@ -40,6 +43,8 @@ defaults:
       sitemap: false
 
 markdown: CommonMarkGhPages
+
+highlighter: rouge
 
 # jekyll-mentions 
 jekyll-mentions:

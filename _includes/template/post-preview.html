@@ -3,5 +3,9 @@
         <img src="{{ post.image }}" alt="{{ post.title }}" />
     </a>
     <h3>{{ post.title }}</h3>
-    <p> {{ post.excerpt }} </p>
+    <p> {{ 
+        post.excerpt 
+        | strip_html
+        | xml_escape
+    }} </p>
 </article>
