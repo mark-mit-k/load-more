@@ -1,0 +1,14 @@
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons">
+            {% for item in site.data.social %}
+                {% include social.html %}
+            {% endfor %}
+        </ul>
+        <ul class="copyright">
+            <li>&copy; {{site.title}} &bullet; <a href="imprint.html">imprint</a></li>
+        </ul>
+    </div>
+</footer>
+

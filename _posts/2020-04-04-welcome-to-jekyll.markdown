@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+image: "/assets/images/thumbs/01.jpg"
 date:   2020-04-04 06:34:45 -0500
 categories: jekyll update
 ---
